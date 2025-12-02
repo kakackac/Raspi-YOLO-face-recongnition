@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 사용자 관리"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 사용자 등록 섹션 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새 사용자 등록"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력하세요 (예: 홍길동)"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="얼굴 사진 선택하기"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#E0E0E0"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="등록 요청 보내기"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 사용자 삭제 섹션 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 삭제"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#F44336"/>
+
+        <EditText
+            android:id="@+id/etDeleteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="삭제할 이름 입력"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="삭제 요청 보내기"
+            android:backgroundTint="#F44336"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
